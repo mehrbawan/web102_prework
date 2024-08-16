@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #ffffff;
 }
 
 #tentacles {
@@ -19,12 +19,45 @@ body {
     margin-top: -10px;
 }
 
+h1,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+button {
+    color: teal;
+}
+
+h3,
+h4,
+h5,
+p {
+    color: rgb(58, 58, 58);
+}
+
+
+.intro-header {
+    padding: 30px 0px 30px 0px;
+}
+
 .stats-container {
     display: flex;
+    align-items: center;
+    width: 70%;
+    /*background-color: lightblue;*/
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: rgb(236, 247, 250);
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -32,8 +65,10 @@ body {
     text-align: center;
 }
 
-#num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+#num-contributions,
+#total-raised,
+#num-games {
+    font-size: 20px;
 }
 
 #games-container {
@@ -72,4 +107,11 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+#searchBar {
+    font-family: Cabin;
+    width: 30%;
+    font-size: 15px;
+    text-align: center;
 }
